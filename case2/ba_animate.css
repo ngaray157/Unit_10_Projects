@@ -14,7 +14,67 @@
 
 /* Transition Styles */
 
+nav a{
+   background-image: url(ba_target.png);
+   background-repeat: no-repeat;
+   color: rgb(253,240,133);
+   background-position: center;
+   background-size: 0%;
+   transition: background-size 0.3s;
+   transition: color 0.8s;
+}
 
+nav a:hover{
+   background-size: 100%;
+   color: rgb(244,130,130);
+}
 
 /* Animation Styles */
 
+@keyframes moveRed{
+   0% {left: 0px;
+      filter:drop-shadow(rgb(51,51,51)-40px 20px 25px);}
+
+   49% {transform: scaleX(1);}
+
+   50% {left: 380px;
+       filter:drop-shadow(rgb(51,51,51)0px 0px 0px);
+       transform: scaleX(0.4);}
+
+   51% {transform: scaleX(1.0);}
+
+   100% {left: 0px;
+         filter:drop-shadow(rgb(51,51,51)-40px 20px 25px);}
+}
+
+@keyframes moveBlue{
+   0% {right: 0px;
+      filter:drop-shadow(rgb(51,51,51)0px 20px 25px);}
+   49% {transform: scaleX(1);}
+   50% {right: 380px;
+       filter:drop-shadow(rgb(51,51,51)0px 0px 0px);
+       transform: scaleX(0.4);}
+   51% {transform: scaleX(1.0);}
+   100% {right: -700px;
+         filter:drop-shadow(120px 120px 20px);}
+}
+
+@keyframes showText{
+   0% {opacity: 0;}
+   49% {opacity: 0;}
+   51% {opacity: 1;}
+   100% {opacity: 1;}
+}
+
+@keyframes hideText{
+   0% {opacity: 1;}
+   49% {opacity: 1;}
+   51% {opacity: 0;}
+   100% {opacity: 0;}
+}
+
+div#animBox {
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
