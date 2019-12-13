@@ -73,8 +73,26 @@ nav a:hover{
    100% {opacity: 0;}
 }
 
-div#animBox {
-   animation-duration: 5s;
-   animation-iteration-count: infinite;
-   animation-timing-function: linear;
+img#redBall{
+   animation: moveRed 5s linear infinite; 
+}
+
+img#blueBall{
+   animation: moveBlue 5s linear infinite;
+}
+
+div#redSpeed1{
+   animation: hideText 5s linear infinite;
+}
+
+div#blueSpeed1{
+   animation: hideText 5s linear infinite;
+}
+
+div#redSpeed2{
+   animation: showText 5s linear infinite;
+}
+
+div#blueSpeed2{
+   animation: showText 5s linear infinite;
 }
