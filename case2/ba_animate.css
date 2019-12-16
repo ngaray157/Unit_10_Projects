@@ -20,8 +20,7 @@ nav a{
    color: rgb(253,240,133);
    background-position: center;
    background-size: 0%;
-   transition: background-size 0.3s;
-   transition: color 0.8s;
+   transition: background-size 0.3s, color 0.8s;
 }
 
 nav a:hover{
